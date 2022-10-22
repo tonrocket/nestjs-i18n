@@ -11,6 +11,6 @@ export function getContextObject(context: ExecutionContext): any {
     case 'rpc':
       return context.switchToRpc().getContext();
     default:
-      logger.warn(`context type: ${context.getType()} not supported`);
+    // logger.warn(`context type: ${context.getType()} not supported`);
   }
 }
